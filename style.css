@@ -44,3 +44,9 @@ input[type=submit] {
   }
 
 
+.rgpd{
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.374);
+  }
+
