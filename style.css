@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    text-align: center;
+    margin: 200px;
+    justify-content: center;
+}
+
+section{
+    background-color: rgba(255, 255, 255, 0.505);
+    width: 500px;
+    padding: 20px;
+    color: rgb(241, 164, 48);
+}
+
+input{
+    padding: 10px;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    color: white;
+    background:rgb(241, 164, 48);
+    border: 0 none;
+    cursor: pointer;
+
+  }
+
+  input[type=submit]:hover{
+    padding: 5px 15px;
+    color: white;
+    background:rgb(48, 161, 241);
+    border: 0 none;
+    cursor: pointer;
+  }
+
+  a.lien{
+      text-decoration: none;
+      color: #3f87a6;
+  }
+
+
