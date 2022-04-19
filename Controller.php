@@ -56,3 +56,13 @@ class Controller
         }
     }
 }
+
+if (!isset($_SESSION['user'])) {
+    if (isset($_COOKIE['souvenir']) && !empty($_COOKIE['souvenir'])) {
+        // code
+        if (!empty($user)) {
+            $_SESSION['user'] = $user;
+            header("Location:index.php");
+        }
+    }
+}

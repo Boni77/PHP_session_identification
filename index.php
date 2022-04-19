@@ -1,5 +1,6 @@
 <?php
 require_once("MyError.php");
+require_once("dbconnect.php");
 session_start();
 
 $_SESSION['token'] = bin2hex(random_bytes(24));
@@ -47,7 +48,8 @@ if (!isset($_SESSION['error']))
                 <p><input type="text" name="username" placeholder="Votre login" required></p>
                 <p><input type="hidden" value="<?= $_SESSION['token'] ?>" name="token"></p>
                 <p><input type="password" name="password" placeholder="Votre mot de passe" required></p>
-                <input type="checkbox" name="souvenir">Se souvenir de moi
+                <input type="checkbox" name="souvenir" id="souvenir" />
+                <label for="souvenir"> Se souvenir de moi</label>
                 <p><input type="submit" value="Connexion" required></p>
 
             </form>
